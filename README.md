@@ -6,7 +6,7 @@ Working features:
 - Making coffee(low, medium, high quality) from water and seeds.
 - Drinking coffee with animation.
 - Replenishment needs when drinking coffee.
-- Notification how good coffee will be(using mythic_notify from: https://github.com/wowpanda/mythic_notify, you have to add it on your own).
+- Notification how good coffee was(using mythic_notify from: https://github.com/wowpanda/mythic_notify, you have to add it on your own).
 - Config file for blips+markers.
 
 Not finished things:
