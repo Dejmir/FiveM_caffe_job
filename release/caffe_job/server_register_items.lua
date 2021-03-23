@@ -1,0 +1,30 @@
+ESX = nil
+
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+
+ESX.RegisterUsableItem('kawa_low', function(playerId)
+	local xPlayer = ESX.GetPlayerFromId(playerId)
+	TriggerClientEvent('esx_extraitems:kawa_low', playerId)
+	xPlayer.removeInventoryItem('kawa_low', 1)
+	TriggerEvent("caffeDrinkLow", playerId)
+	TriggerClientEvent("drinkAnimation", playerId)
+	TriggerClientEvent('esx_status:add', playerId, 'thirst', 100000)
+end)
+
+ESX.RegisterUsableItem('kawa_medium', function(playerId)
+	local xPlayer = ESX.GetPlayerFromId(playerId)
+	TriggerClientEvent('esx_extraitems:kawa_medium', playerId)
+	xPlayer.removeInventoryItem('kawa_medium', 1)
+	TriggerEvent("caffeDrinkMedium", playerId)
+	TriggerClientEvent("drinkAnimation", playerId)
+	TriggerClientEvent('esx_status:add', playerId, 'thirst', 150000)
+end)
+
+ESX.RegisterUsableItem('kawa_high', function(playerId)
+	local xPlayer = ESX.GetPlayerFromId(playerId)
+	TriggerClientEvent('esx_extraitems:kawa_high', playerId)
+	xPlayer.removeInventoryItem('kawa_high', 1)
+	TriggerEvent("caffeDrinkHigh", playerId)
+	TriggerClientEvent("drinkAnimation", playerId)
+	TriggerClientEvent('esx_status:add', playerId, 'thirst', 200000)
+end)
