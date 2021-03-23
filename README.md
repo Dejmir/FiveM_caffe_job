@@ -1,7 +1,22 @@
 # Project discontinued and not finished !
 
 Working features:
-- 
+- Employ someone near marker (probably works..).
+- Collecting water(low, medium, high quality) and seeds(low, medium, high quality).
+- Making coffee(low, medium, high quality) from water and seeds.
+- Drinking coffee with animation.
+- Replenishment needs when drinking coffee.
+- Notification how good coffee will be(using mythic_notify from: https://github.com/wowpanda/mythic_notify, you have to add it on your own).
+- Config file for blips+markers.
+
+Not finished things:
+- Fully working database with job/s and server.
+- When first time drinking animation not works properly.
+- Caffe interior (not included).
+- Fire someone.
+
+Todo things:
+- Ranks management.
 
 To make it works do that steps:
 - If you want to use not finished version just drop content of release folder to your server scripts folder and add it to server config.
