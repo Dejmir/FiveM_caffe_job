@@ -15,7 +15,7 @@ Not finished things:
 - Caffe interior (not included).
 - Fire someone.
 
-Todo things:
+Todo things(yeah...):
 - Ranks management.
 
 To make it works do that steps:
